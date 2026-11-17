@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- head
+
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+        When To Modify:
+        - [x] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+        <title>WoW Forever: Official Launch Party!</title>
+        <link rel="icon" href="./img/logo500.png" />
+        <link rel="stylesheet" href="./styles.css" />
+
+        <!--
+        <style>
+            /* Style rules go here. */
+            body {
+            background-color: #35415f;
+            color: #e0e6ed;
+            font-family: Arial, sans-serif;
+            }
+
+        h1 {
+            color: #ffae00;
+            font-size: 38px;
+            letter-spacing: 1px;
+        }
+
+        button {
+            background-color: #4a8dc0;
+            color: #ffffff;
+            border: none;
+            padding: 10px 18px;
+            margin-right: 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        a {
+            color: #58a6ff;
+            text-decoration: underline;
+        }
+
+        a:hover {
+        color: #3d0242;
+        }
+        
+        </style>
+        -->
+
+    </head>
+    
+    <body>
+    
+        <!-- navbar
+
+        Purpose:
+        - Navigation bar that allows users to jump to different sections of the webpage
+        - Also holds buttons for user settings (dark mode, reduce motion)
+
+        When To Modify:
+        - [x] Project 4 (REQUIRED FEATURE)
+        - [x] Project 5 (REQUIRED FEATURE) 
+        - [X] Project 8 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        -->
+
+    <div class="navbar">
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="https://www.youtube.com/watch?v=uQuKE0KDgiM">Gameplay Trailer</a></li>
+        <li><a href="https://worldofwarcraft.blizzard.com" target="_blank">Blizzard Official Website</a></li>
+        <li><button id="theme-button">Toggle Light Mode</button></li>
+        <li><button id="reduce-motion-button">Reduce Motion OFF</button></li>
+    </ul>
+    </div>
+
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [x] Project 2 (REQUIRED FEATURE) 
+        - [x] Project 3 (REQUIRED FEATURE) 
+        - [x] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+        <br>
+      <div class="header-container">
+        <div class="header-item">
+            <h1>Aurora's WoW Forever Launch LAN Party</h1>
+            <h2>All-Night Gaming Grind - November 4, 2026!</h2>
+            <iframe 
+                width="480" 
+                height="270" 
+                src="https://www.youtube.com/embed/xXaXYxcbA6A" 
+                title="WoW Cinematic Trailer" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+            <br>
+            <button type="button">RSVP Station</button>
+            <button type="button">Guild Roster</button>
+        </div>
+    </div>
+
+        
+        <!-- about
+
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [x] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 id="about"> About the Event</h2>
+        <p> Celebrate the official launch of World of Warcraft: Forever with your fellow WoW nerds. 
+            Bring your own rig (and let me know if you will need to borrow mouse/keyboard) or bring your gaming laptop!
+            Whether you want to focus on leveling while reading quest text, speedrunning to max level, or wanting to enjoy open exploration and profession crafting for nostalgia; you shouldn't do it alone!
+        </p>
+
+        <h3>  What to Expect</h3>
+        <h4>Prepare to relive your childhood!</h4>
+        <ul>
+            <li> <b>IRL Grouping:</b> <i>we are all playing the same game, so before you need help with a quest or killing a boss ask someone here to join you!</i></li>
+            <li> <b>Food Break:</b> <i>I will have bundle snacks like chips and goldfish readily available, but will stop a few hours in to decide on pizza order for all.</i></li>
+            <li> <b>Caffeine Breaks:</b> <i>Constantly stocked with sodas and a minifridge in arms length but will take 10 minute break every couple hours for fresh made coffee!</i></li>
+        </ul>
+
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [x] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 id="schedule"> Event Schedule</h2>
+
+        <img alt="World of Warcraft Forever logo image" src="./img/WoW Forever.png" width="450"/>
+        <h3> Day 1: Leveling Push (at your own speed) </h3>
+        <p>The start of the long-rumored WoW 2 known as World of Warcraft Forever! It is the original game with 
+            upgraded graphics in HD, a new Skyborne race, a promise that the servers for this game will be running forever!</p>
+        
+    <div class="revealable">       
+        <img alt="Stock image of a LAN party" src="./img/LAN party.png" width="450"/>
+        <h3>Day 2: Choosing professions and creating guild (you are not forced to join)</h3>
+        <p>I will have a spare monitor, plenty of extention cable outlets, keyboards and mice. 
+            However, let me know in advance what you will be needing to ensure I have enough spare 
+            input devices for all those who need it! There will be plenty of spare table space and seating 
+            but you are free to bring your own chair if you prefer. Snacks and drinks are on me but feel free to bring something - 
+            just bring enough for sharing!</p>
+    </div>         
+        
+
+        <!-- rsvp
+
+        Purpose:
+        - Section for users to sign up for the event
+        - Contains a form for users to input their information, 
+        and a list of other users who have signed up
+
+        When To Modify:
+        - [x] Project 6 (REQUIRED FEATURE) 
+        - [ ] Project 6 (STRETCH FEATURE) 
+        - [ ] Any time after
+        --> 
+
+
+        <div id="rsvp">
+            <h2>RSVP</h2>
+            <div class="rsvp-container">
+                <div class="rsvp-para">
+                    Azeroth once again is refreshed with new quests, and graphics. Set in the original timeline without Gul'dan or the destruction of the Lich King. 
+                    Explore what it was like to have an online RPG where random players help you when your health is low, or your guildmates actually hop in the discord 
+                    to give raid/dungeon instructions. There is no LFG, group finder, and in order to clear a dungeon you must coordinate with a team and make a guild 
+                    you actually look forward to speaking to!
+                </div>
+                <div class="rsvp-participants">
+                    <p>⚔️ Lifesavor the warrior tank has RSVP'd.</p>
+                    <p>🏹 Beautylives the hunter has RSVP'd.</p>
+                    <p>🧙 Lovegood the mage has RSVP'd.</p>
+                </div>
+            </div>
+
+            <!--- Sign RSVP Form 🎟️--->
+            <div class="form-container">
+                <form id="rsvp-form" title="rsvp-form">
+                    <!-- form inputs go here -->
+                     <label for="name">IRL or Character Name: </label>
+                     <input id="name" type="text" maxlength="35">
+                     <label for="email">Email: </label>
+                     <input id="email" type="text" maxlength="25">
+                     <label for="characterClass">Class (tank/healer): </label>
+                     <input id="characterClass" type="text" maxlength="15">
+                </form>
+                <!-- Submit button -->
+                 <br>
+                <button id="rsvp-button">Submit RSVP</button>
+            </div>      
+        </div>
+        
+
+        <!-- success modal
+
+        Purpose:
+        - Modal that appears when a user successfully signs up for the event
+        - Contains a personalized message and image
+
+        When To Modify:
+        - [ ] Project 9 (REQUIRED FEATURE)
+        - [ ] Project 9 (STRETCH FEATURE) 
+        - [ ] Any time after
+        --> 
+
+<div id="success-modal" class="modal">
+  <div class="modal-container">
+    <div class="modal-item">
+      <p id="modal-text">Placeholder text</p>
+      <button id="close-modal-button">Close</button>
+    </div>
+    <div class="modal-item">
+      <img id="modal-image" src="./img/RSVP Confirmation.jpg" alt="WoW Forever logo" width="250" />
+    </div>
+  </div>
+</div>
+ 
+
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2>Links</h2>
+        <article>
+            <h3><a href="https://worldofwarcraft.blizzard.com/en-us/forever" target="_blank">Blizzard Official Site: WoW Forever Overview</a></h3>
+            <p>Check out new race, overview of what was announced on day 1 of BlizzCon and review latest news.</p>
+        </article>
+
+        <article>
+            <h3><a href="https://www.wowhead.com/forever" target="_blank">Wowhead main landing page for WoW Forever</a></h3>
+            <p>Check out the Wowhead main Forever page for latest announcements, guides, and helpful tips and tricks.</p>
+        </article>
+
+        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+        <a class="block" href="https://www.codepath.org">
+            <article>
+                <!--<h3>Link title</h3>
+                <p>Link description</p>-->
+            </article>
+        </a>
+            
+        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+    <script src="index.js"></script>
+    
+    </body>
+</html>
